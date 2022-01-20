@@ -1,0 +1,43 @@
+<div class="wrapper">
+    <!--angular reactive form for task name, description, due date, and priority-->
+    <form [formGroup]="taskForm" (ngSubmit)="onSubmit()">
+    <div class="form-group">
+        <label for="taskName">Task Name</label>
+        <input type="text" class="form-control" id="taskName" formControlName="taskName" placeholder="Enter task name">
+    </div>
+    <div class="form-group">
+        <label for="taskDescription">Task Description</label>
+        <input type="text" class="form-control" id="taskDescription" formControlName="taskDescription" placeholder="Enter task description">
+    </div>
+    <div class="form-group">
+        <label for="taskDueDate">Task Due Date</label>
+        <input type="date" class="form-control" id="taskDueDate" formControlName="taskDueDate" placeholder="Enter task due date">
+    </div>
+    <div class="form-group">
+        <label for="taskPriority">Task Priority</label>
+        <select class="form-control" id="taskPriority" formControlName="taskPriority">
+        <option>High</option>
+        <option>Medium</option>
+        <option>Low</option>
+        </select>
+    </div>
+    <button type="submit" class="btn btn-primary">Submit</button>
+    </form>
+
+    <!--list of tasks containing name, description, duedate, and priority from the taskform in the component-->
+    <ul>
+    <li *ngFor="let task of tasks">
+        <h3>Name: {{task.taskName}}</h3>
+        <p>Description: {{task.taskDescription}}</p>
+        <p>Due Date: {{task.taskDueDate}}</p>
+        <p>Priority: {{task.taskPriority}}</p>
+    </li>
+    </ul>
+</div>
+
+
+
+
+
+
+

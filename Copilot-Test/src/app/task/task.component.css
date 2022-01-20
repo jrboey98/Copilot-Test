@@ -1,0 +1,49 @@
+/*.form-group is a wide input that is centered vertically and horizontally in its container*/
+.form-group {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin: 0;
+    padding: 0;
+}
+
+/*.form-control is a small input*/
+.form-control {
+    width: 100%;
+}
+
+/*.btn is a flat button with rounded corners*/
+.btn {
+    border-radius: .25em;
+    border: none;
+    background-color: #00bcd4;
+    color: white;
+    padding: 10px;
+    margin: 10px;
+    width: 100%;
+}
+
+/*.btn-primary is a button with a blue background*/
+.btn-primary {
+    background-color: #337ab7;
+}
+
+/*.btn-primary:hover is a button with a blue background when hovered*/
+.btn-primary:hover {
+    background-color: #286090;
+}
+
+/*.wrapper is a container for the form that is centered horizontally on the page and is half the width of the page and uses sans-serif font*/
+.wrapper {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 50%;
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+}
+
