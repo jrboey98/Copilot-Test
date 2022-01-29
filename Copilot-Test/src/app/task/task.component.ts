@@ -52,7 +52,7 @@ export class TaskComponent implements OnInit {
     this.tasks = this.tasks.filter(t => t !== task);
   }
 
-  //function to order tasks in array by due date, but if priority is set to high, move to front of array
+  //function to order tasks in array by due date
   orderTasks() {
     this.tasks.sort((a, b) => {
       if (a.taskDueDate < b.taskDueDate) {
